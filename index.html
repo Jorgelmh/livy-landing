@@ -24,7 +24,8 @@
 
   <!-- PWA (optional placeholders) -->
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="./assets/app-logo.png" />
+  <link rel="apple-touch-icon" href="./assets/app-logo.png" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -117,33 +118,23 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="relative hero-gradient overflow-hidden">
-    <div aria-hidden="true" class="absolute inset-0 dot-grid text-livy-ink"></div>
-    <div class="relative mx-auto max-w-7xl px-4 pt-16 pb-24">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
-            Livy helps you write the best story: <span class="text-livy-red">yours</span>.
-          </h1>
-          <p class="mt-5 text-lg text-black/70">
-            A real‑time <strong>voice journaling app</strong> that listens, understands, and reflects with you. Capture
-            moments hands‑free, organize insights automatically, and grow your story one conversation at a time.
-          </p>
-          <div class="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#download" class="rounded-xl bg-livy-red px-5 py-3 text-white font-medium shadow-soft">Download</a>
-            <a href="#features" class="rounded-xl border px-5 py-3 font-medium hover:border-livy-red">See how it
-              works</a>
-          </div>
-          <p class="mt-4 text-sm text-black/50">Private by design. End‑to‑end encrypted conversations.</p>
+  <section id="home" class="relative overflow-hidden min-h-[700px] bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/starter-banner.png'); background-size: cover; background-position: 60% center;">
+    <!-- White gradient overlay for text readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+    <div class="relative mx-auto max-w-7xl px-4 pt-20 pb-28">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-livy-ink">
+          Livy helps you write the most amazing story: <span class="text-livy-red">yours</span>.
+        </h1>
+        <p class="mt-5 text-lg text-livy-ink/80">
+          A journaling companion that listens, understands, and reflects with you. Capture important moments, order your thoughts and grow your story one chapter at the time.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a href="#download" class="rounded-xl bg-livy-red px-5 py-3 text-white font-medium shadow-soft hover:opacity-95">Download</a>
+          <a href="#features" class="rounded-xl border border-livy-ink/20 px-5 py-3 font-medium hover:border-livy-red bg-white/80">See how it
+            works</a>
         </div>
-        <div class="relative">
-          <!-- Marketing illustration / app images. Replace the src values with the attached Livy images once hosted. -->
-          <div class="relative aspect-[4/5] rounded-3xl bg-livy-cream p-6 shadow-soft ring-1 ring-black/5">
-            <img src="./assets/livy-full-figure.png" alt="Livy full figure"
-              class="relative mx-auto h-full object-contain" />
-          </div>
-          <p class="sr-only">The red‑background mark shown in the header is the official Livy logo.</p>
-        </div>
+        <p class="mt-4 text-sm text-livy-ink/60">Private by design. End‑to‑end encrypted conversations.</p>
       </div>
     </div>
   </section>
@@ -155,20 +146,19 @@
         <div>
           <h2 class="text-3xl font-bold tracking-tight">Livy’s vision for you</h2>
           <p class="mt-4 text-lg text-black/70">
-            Journaling shouldn’t feel like work. I’m here to turn your everyday moments into meaning by <em>talking with
-              you in real time</em>. When reflection is effortless, you’ll record more, understand yourself better, and
-            make clearer choices.
+            Journaling is a very intimate experience, but having a conversation partner can make writing about your experiences easier. <span class="text-livy-red font-extrabold">Livy</span> is there to talk to you in real time, making reflection effortless, and self-understanding easier.</span>
           </p>
           <ul class="mt-6 space-y-3 text-black/80">
             <li class="flex gap-3 items-start"><span
-                class="mt-2 h-2 w-2 rounded-full bg-livy-red flex-shrink-0"></span><span>Voice‑first capture that feels
-                natural, not performative.</span></li>
+                class="mt-2 h-2 w-2 rounded-full bg-livy-red flex-shrink-0"></span><span>Natural conversations - <span class="text-livy-red font-extrabold">Just talk to Livy!</span> Text-based chat is also available.</span></li>
             <li class="flex gap-3 items-start"><span
-                class="mt-2 h-2 w-2 rounded-full bg-livy-red flex-shrink-0"></span><span>AI that summarizes, tags, and
-                connects your themes over time.</span></li>
+                class="mt-2 h-2 w-2 rounded-full bg-livy-red flex-shrink-0"></span><span><span class="text-livy-red font-extrabold">Livy</span> summarizes, tags, and connects themes in your conversations as she learns more about you.</span></li>
             <li class="flex gap-3 items-start"><span
-                class="mt-2 h-2 w-2 rounded-full bg-livy-red flex-shrink-0"></span><span>Private by default with
-                end‑to‑end encryption to the LLM provider.</span></li>
+                class="mt-2 h-2 w-2 rounded-full bg-livy-red flex-shrink-0"></span><span>Private by design. <span class="text-livy-red font-extrabold">Livy</span> is encrypted end-to-end and GDPR compliant.
+                </span></li>
+            <li class="flex gap-3 items-start"><span
+                class="mt-2 h-2 w-2 rounded-full bg-livy-red flex-shrink-0"></span><span>Change image for <span class="text-livy-red font-extrabold">Livy</span> with star eyes.
+                </span></li>
           </ul>
         </div>
         <div class="flex justify-center">
@@ -219,11 +209,10 @@
     <div class="mx-auto max-w-6xl px-4">
       <div class="flex flex-col items-center">
         <div class="rounded-3xl bg-livy-cream p-8 shadow-soft ring-1 ring-black/5 w-full">
-          <blockquote class="text-xl leading-relaxed text-center">
-            “Livy helps you write the best story: <span class="text-livy-red font-semibold">yours</span>.”
+          <blockquote class="text-xl leading-relaxed text-center font-extrabold">
+            “Livy helps you write the most amazing story: <span class="text-livy-red">yours</span>.”
           </blockquote>
-          <p class="mt-4 text-black/60 text-center">I guide the conversation, take structured notes, and reveal patterns
-            across your calendar and life events—so you can grow with intention.</p>
+          <p class="mt-4 text-black/60 text-center">I will help you keep track of your goals, look for pattern behaviours across you life events, all to help you grow with intention</p>
         </div>
         <div class="mt-8">
           <img src="./assets/livy-side-profile.png" alt="Livy illustration" class="w-40 md:w-52 drop-shadow mx-auto" />
@@ -235,38 +224,36 @@
   <!-- Features -->
   <section id="features" class="py-24 bg-gradient-to-b from-white to-livy-cream/60">
     <div class="mx-auto max-w-7xl px-4">
-      <h2 class="text-3xl font-bold text-center">What makes Livy different</h2>
+      <h2 class="text-3xl font-bold text-center">Why Livy?</h2>
       <p class="mt-3 text-center text-black/70 max-w-2xl mx-auto">A focused set of features to help you capture,
         reflect, and act—without the clutter.</p>
 
       <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card -->
         <div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/5">
-          <div class="text-livy-red font-semibold">Real‑time Voice</div>
+          <div class="text-livy-red font-semibold">Real‑time Voice 💬</div>
           <p class="mt-2 text-black/70">Talk naturally. Livy transcribes on‑device, mirrors back key points, and asks
             helpful follow‑ups.</p>
         </div>
         <div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/5">
-          <div class="text-livy-red font-semibold">Smart Summaries</div>
+          <div class="text-livy-red font-semibold">Smart Summaries 📃</div>
           <p class="mt-2 text-black/70">Automatic notes with topics, mood, and action items.</p>
         </div>
         <div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/5">
-          <div class="text-livy-red font-semibold">Personal Memory</div>
-          <p class="mt-2 text-black/70">Livy remembers what matters to you and personalizes prompts across sessions.</p>
+          <div class="text-livy-red font-semibold">Personal Memories 🧠</div>
+          <p class="mt-2 text-black/70">Livy remembers what matters to you and keeps track of your goals across sessions.</p>
         </div>
         <div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/5">
-          <div class="text-livy-red font-semibold">Calendar Journal</div>
-          <p class="mt-2 text-black/70">See entries alongside your schedule to spot patterns and progress.</p>
+          <div class="text-livy-red font-semibold">Calendar Journal 📆</div>
+          <p class="mt-2 text-black/70">See your entries over time to see your progress and identify patterns.</p>
         </div>
         <div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/5">
-          <div class="text-livy-red font-semibold">Private by Design</div>
-          <p class="mt-2 text-black/70">End‑to‑end encrypted conversations to the LLM provider. You choose whether
-            transcripts are saved.</p>
+          <div class="text-livy-red font-semibold">Private by Design 🔒</div>
+          <p class="mt-2 text-black/70">End‑to‑end encrypted conversations to the LLM provider. You choose whether transcripts are saved.</p>
         </div>
         <div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-black/5">
-          <div class="text-livy-red font-semibold">Personalized Templates</div>
-          <p class="mt-2 text-black/70">Reflect on what matters to you with customizable templates that guide your
-            journaling journey.</p>
+          <div class="text-livy-red font-semibold">Personalized Templates 🪡</div>
+          <p class="mt-2 text-black/70">Reflect on what matters to you with templates tailored to your journey.</p>
         </div>
       </div>
     </div>
@@ -361,12 +348,29 @@
       <h2 class="text-3xl font-bold">Start your story with Livy</h2>
       <p class="mt-3 opacity-90">Join early access and help shape the next chapters.</p>
       <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <!-- Replace '#' with the real store links when ready -->
+        <!-- App Store Button -->
         <a href="#" aria-label="Download on the App Store"
-          class="rounded-xl bg-white text-livy-ink px-5 py-3 font-medium shadow-soft hover:opacity-95">App Store</a>
+          class="inline-flex items-center bg-black text-white rounded-lg px-4 py-3 hover:bg-gray-800 transition-colors">
+          <svg class="w-8 h-8 mr-3" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <div class="text-left">
+            <div class="text-xs">Download on the</div>
+            <div class="text-lg font-semibold -mt-1">App Store</div>
+          </div>
+        </a>
+        
+        <!-- Google Play Button -->
         <a href="#" aria-label="Get it on Google Play"
-          class="rounded-xl border border-white/30 px-5 py-3 font-medium hover:bg-white hover:text-livy-ink">Google
-          Play</a>
+          class="inline-flex items-center bg-black text-white rounded-lg px-4 py-3 hover:bg-gray-800 transition-colors">
+          <svg class="w-8 h-8 mr-3" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+          </svg>
+          <div class="text-left">
+            <div class="text-xs">Get it on</div>
+            <div class="text-lg font-semibold -mt-1">Google Play</div>
+          </div>
+        </a>
       </div>
       <p class="mt-4 text-sm/relaxed opacity-85">Prefer email? Join the waitlist and we’ll notify you at launch.</p>
       <form class="mt-6 mx-auto max-w-md flex gap-2"
